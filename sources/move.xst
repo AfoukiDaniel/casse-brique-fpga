@@ -1,0 +1,5 @@
+set -tmpdir "H:/Documents/PMC_E201/xst/projnav.tmp"
+set -xsthdpdir "H:/Documents/PMC_E201/xst"
+elaborate
+-ifn move.prj
+-ifmt mixed

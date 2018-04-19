@@ -1,0 +1,36 @@
+Release 14.7 - xst P.20131013 (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to H:/Documents/PMC_E201/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to H:/Documents/PMC_E201/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/ClkDiv.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "//turing/homes/Documents/PMC_E201/ClkDiv.vhd" is newer than current system time.
+Entity <clkdiv> compiled.
+Entity <clkdiv> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.40 secs
+ 
+--> 
+
+Total memory usage is 187484 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

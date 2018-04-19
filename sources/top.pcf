@@ -1,0 +1,35 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Mar 18 16:14:11 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "S0" LOCATE = SITE "L13" LEVEL 1;
+COMP "S1" LOCATE = SITE "L14" LEVEL 1;
+COMP "S2" LOCATE = SITE "H18" LEVEL 1;
+COMP "S3" LOCATE = SITE "N17" LEVEL 1;
+COMP "VGA_red" LOCATE = SITE "H14" LEVEL 1;
+COMP "VGA_blue" LOCATE = SITE "G15" LEVEL 1;
+COMP "est" LOCATE = SITE "H13" LEVEL 1;
+COMP "sud" LOCATE = SITE "K17" LEVEL 1;
+COMP "rxd" LOCATE = SITE "U8" LEVEL 1;
+COMP "txd" LOCATE = SITE "M13" LEVEL 1;
+COMP "VGA_green" LOCATE = SITE "H15" LEVEL 1;
+COMP "nord" LOCATE = SITE "V4" LEVEL 1;
+COMP "clk50" LOCATE = SITE "C9" LEVEL 1;
+COMP "hsync" LOCATE = SITE "F15" LEVEL 1;
+COMP "ouest" LOCATE = SITE "D18" LEVEL 1;
+COMP "rot_a" LOCATE = SITE "K18" LEVEL 1;
+COMP "rot_b" LOCATE = SITE "G18" LEVEL 1;
+COMP "vsync" LOCATE = SITE "F14" LEVEL 1;
+COMP "rot_button" LOCATE = SITE "V16" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "E12" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "E11" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "F11" LEVEL 1;
+COMP "led<4>" LOCATE = SITE "C11" LEVEL 1;
+COMP "led<5>" LOCATE = SITE "D11" LEVEL 1;
+COMP "led<6>" LOCATE = SITE "E9" LEVEL 1;
+COMP "led<7>" LOCATE = SITE "F9" LEVEL 1;
+NET "clk50_BUFGP/IBUFG" BEL "clk50_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

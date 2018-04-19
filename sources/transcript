@@ -1,0 +1,36 @@
+# Reading C:/modeltech_6.6f/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.6f Sep  8 2011 
+# //
+# //  Copyright 1991-2011 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# do {simu_game_mgr.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE vcom 6.6f Compiler 2011.09 Sep  8 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity game_mgr
+# -- Compiling architecture behavioral of game_mgr
+# Model Technology ModelSim SE vcom 6.6f Compiler 2011.09 Sep  8 2011
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity simu_game_mgr
+# -- Compiling architecture behavior of simu_game_mgr
+# ** Warning: [4] simu_game_mgr.vhd(78): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# vsim -lib work -voptargs=\"+acc\" -t 1ps work.simu_game_mgr 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "game_mgr(behavioral)".
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.simu_game_mgr(behavior)#1
+# Loading work.game_mgr(behavioral)#1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# 
+#  

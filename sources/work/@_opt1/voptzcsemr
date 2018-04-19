@@ -1,0 +1,74 @@
+m255
+K3
+13
+cModel Technology
+Z0 dH:\Documents\PMC_E201
+T_opt
+Z1 Va75`7FCA5<@JWDG5j^Wm>2
+Z2 04 4 10 work move behavioral 1
+Z3 =1-60a44c526397-56e2b0ff-e1-16e4
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OE;O;6.6f;45
+Z7 dH:\Documents\PMC_E201
+T_opt1
+Z8 V:<PkDJMbbge7e<=UIchRN0
+Z9 04 9 8 work simu_move behavior 1
+Z10 =1-60a44c526ccf-56ec0e78-308-d38
+Z11 o-quiet -auto_acc_if_foreign -work work +acc
+Z12 n@_opt1
+R6
+R7
+Emove
+Z13 w1457712259
+Z14 DPx22 C:\modeltech_6.6f\ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+31
+R7
+Z15 8move.vhd
+Z16 Fmove.vhd
+l0
+L32
+Z17 V7:3C906R3:H_nKR?0M]`23
+Z18 OE;C;6.6f;45
+Z19 o-explicit -93
+Z20 tExplicit 1
+Z21 !s100 Q:SYCezKNFRWPG9l;jB6N1
+Abehavioral
+R14
+Z22 DEx26 H:\Documents\PMC_E201\work 4 move 0 22 7:3C906R3:H_nKR?0M]`23
+31
+Z23 Mx1 22 C:\modeltech_6.6f\ieee 14 std_logic_1164
+l47
+L41
+Z24 VaH=H=48<eb<<PdJ<LhS7n0
+R18
+R19
+R20
+Z25 !s100 moE5Zj^]K]RL4NFlFF6KI1
+Esimu_move
+Z26 w1457705573
+R14
+31
+R7
+Z27 8simu_move.vhd
+Z28 Fsimu_move.vhd
+l0
+L35
+Z29 V]H@O`3lQNjzFYM[b0FWHe3
+R18
+R19
+R20
+Z30 !s100 9Ch2ERD0gaR4o4c3cna:l2
+Abehavior
+R22
+R14
+DEx26 H:\Documents\PMC_E201\work 9 simu_move 0 22 ]H@O`3lQNjzFYM[b0FWHe3
+31
+R23
+l67
+L38
+Z31 VPNeZHjNkQeEjm:Vj2Djik1
+R18
+R19
+R20
+Z32 !s100 :e6b6Q8BU=?`VbOmOdoiA1

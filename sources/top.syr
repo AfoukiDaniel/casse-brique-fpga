@@ -1,0 +1,1262 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/pong_package.vhd" in Library work.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/display.vhd" in Library work.
+Architecture behavioral of Entity display is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/game_mgr.vhd" in Library work.
+WARNING:HDLParsers:3530 - Time stamp of file "//turing/homes/Documents/PMC_E201/game_mgr.vhd" is newer than current system time.
+Entity <game_mgr> compiled.
+Entity <game_mgr> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/mas_sla_mgr.vhd" in Library work.
+Architecture behavioral of Entity master_slave_mgr is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/decor.vhd" in Library work.
+Architecture behavioral of Entity decor is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/pad.vhd" in Library work.
+Architecture behavioral of Entity pad is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/bounce.vhd" in Library work.
+Architecture behavioral of Entity bounce is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/ball.vhd" in Library work.
+Architecture behavioral of Entity ball is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/brick.vhd" in Library work.
+Architecture behavioral of Entity brick_ctrl is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/UARTcomponent.vhd" in Library work.
+Architecture behavioral of Entity uartcomponent is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/move_RS232.vhd" in Library work.
+Architecture behavioral of Entity move_rs232 is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/rotary.vhd" in Library work.
+Architecture behavioral of Entity rotary is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/move.vhd" in Library work.
+Architecture behavioral of Entity move is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/ClkDiv.vhd" in Library work.
+Architecture behavioral of Entity clkdiv is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/switch_mgr.vhd" in Library work.
+Architecture behavioral of Entity switch_mgr is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/button_mgr.vhd" in Library work.
+Architecture behavioral of Entity button_mgr is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/ip_rotary.vhd" in Library work.
+Architecture behavioral of Entity ip_rotary is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/ip_uart.vhd" in Library work.
+Architecture behavioral of Entity ip_uart is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/objects.vhd" in Library work.
+Architecture behavioral of Entity objects is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/game.vhd" in Library work.
+Architecture behavioral of Entity game is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/VGA.vhd" in Library work.
+Architecture archi of Entity vga is up to date.
+Compiling vhdl file "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/top.vhd" in Library work.
+Architecture behavioral of Entity top is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <ClkDiv> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <switch_mgr> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <button_mgr> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ip_rotary> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ip_uart> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <objects> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <game> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <VGA> in library <work> (architecture <archi>).
+
+Analyzing hierarchy for entity <rotary> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <move> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <UARTcomponent> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <move_RS232> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <decor> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <pad> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <bounce> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <ball> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <brick_ctrl> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <display> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <game_mgr> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <master_slave_mgr> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top> in library <work> (Architecture <behavioral>).
+Entity <top> analyzed. Unit <top> generated.
+
+Analyzing Entity <ClkDiv> in library <work> (Architecture <Behavioral>).
+Entity <ClkDiv> analyzed. Unit <ClkDiv> generated.
+
+Analyzing Entity <switch_mgr> in library <work> (Architecture <Behavioral>).
+Entity <switch_mgr> analyzed. Unit <switch_mgr> generated.
+
+Analyzing Entity <button_mgr> in library <work> (Architecture <Behavioral>).
+Entity <button_mgr> analyzed. Unit <button_mgr> generated.
+
+Analyzing Entity <ip_rotary> in library <work> (Architecture <Behavioral>).
+Entity <ip_rotary> analyzed. Unit <ip_rotary> generated.
+
+Analyzing Entity <rotary> in library <work> (Architecture <Behavioral>).
+Entity <rotary> analyzed. Unit <rotary> generated.
+
+Analyzing Entity <move> in library <work> (Architecture <Behavioral>).
+Entity <move> analyzed. Unit <move> generated.
+
+Analyzing Entity <ip_uart> in library <work> (Architecture <Behavioral>).
+Entity <ip_uart> analyzed. Unit <ip_uart> generated.
+
+Analyzing Entity <UARTcomponent> in library <work> (Architecture <Behavioral>).
+Entity <UARTcomponent> analyzed. Unit <UARTcomponent> generated.
+
+Analyzing Entity <move_RS232> in library <work> (Architecture <Behavioral>).
+Entity <move_RS232> analyzed. Unit <move_RS232> generated.
+
+Analyzing Entity <objects> in library <work> (Architecture <Behavioral>).
+Entity <objects> analyzed. Unit <objects> generated.
+
+Analyzing Entity <decor> in library <work> (Architecture <Behavioral>).
+Entity <decor> analyzed. Unit <decor> generated.
+
+Analyzing Entity <pad> in library <work> (Architecture <Behavioral>).
+Entity <pad> analyzed. Unit <pad> generated.
+
+Analyzing Entity <bounce> in library <work> (Architecture <Behavioral>).
+Entity <bounce> analyzed. Unit <bounce> generated.
+
+Analyzing Entity <ball> in library <work> (Architecture <Behavioral>).
+Entity <ball> analyzed. Unit <ball> generated.
+
+Analyzing Entity <brick_ctrl> in library <work> (Architecture <Behavioral>).
+Entity <brick_ctrl> analyzed. Unit <brick_ctrl> generated.
+
+Analyzing Entity <game> in library <work> (Architecture <Behavioral>).
+Entity <game> analyzed. Unit <game> generated.
+
+Analyzing Entity <display> in library <work> (Architecture <Behavioral>).
+Entity <display> analyzed. Unit <display> generated.
+
+Analyzing Entity <game_mgr> in library <work> (Architecture <Behavioral>).
+Entity <game_mgr> analyzed. Unit <game_mgr> generated.
+
+Analyzing Entity <master_slave_mgr> in library <work> (Architecture <Behavioral>).
+Entity <master_slave_mgr> analyzed. Unit <master_slave_mgr> generated.
+
+Analyzing Entity <VGA> in library <work> (Architecture <archi>).
+Entity <VGA> analyzed. Unit <VGA> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ClkDiv>.
+    Related source file is "//turing/homes/Documents/PMC_E201/ClkDiv.vhd".
+    Found 1-bit register for signal <d>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <ClkDiv> synthesized.
+
+
+Synthesizing Unit <switch_mgr>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/switch_mgr.vhd".
+Unit <switch_mgr> synthesized.
+
+
+Synthesizing Unit <button_mgr>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/button_mgr.vhd".
+    Found 1-bit register for signal <appui_nord_est>.
+    Found 1-bit register for signal <appui_sud>.
+    Found 22-bit down counter for signal <compteur>.
+    Found 1-bit register for signal <lock>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   3 D-type flip-flop(s).
+Unit <button_mgr> synthesized.
+
+
+Synthesizing Unit <VGA>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/VGA.vhd".
+    Found 1-bit register for signal <vsync>.
+    Found 1-bit register for signal <hsync>.
+    Found 11-bit comparator greater for signal <hsync$cmp_gt0000> created at line 114.
+    Found 11-bit comparator lessequal for signal <hsync$cmp_le0000> created at line 114.
+    Found 11-bit comparator less for signal <visible$cmp_lt0000> created at line 42.
+    Found 11-bit comparator less for signal <visible$cmp_lt0001> created at line 42.
+    Found 10-bit up counter for signal <xcord>.
+    Found 10-bit up counter for signal <ycord>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <VGA> synthesized.
+
+
+Synthesizing Unit <rotary>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/rotary.vhd".
+    Found 1-bit register for signal <qa>.
+    Found 1-bit register for signal <qb>.
+    Found 1-bit register for signal <press>.
+    Found 1-bit register for signal <echa>.
+    Found 1-bit register for signal <echb>.
+    Found 1-bit 4-to-1 multiplexer for signal <qa$mux0000>.
+    Found 1-bit 4-to-1 multiplexer for signal <qb$mux0000>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <rotary> synthesized.
+
+
+Synthesizing Unit <move>.
+    Related source file is "//turing/homes/Documents/PMC_E201/move.vhd".
+    Found finite state machine <FSM_0> for signal <EP>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 15                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clk25                     (rising_edge)        |
+    | Reset              | reset                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | e0                                             |
+    | Power Up State     | e0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <move> synthesized.
+
+
+Synthesizing Unit <UARTcomponent>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/UARTcomponent.vhd".
+    Found finite state machine <FSM_1> for signal <RX_EP>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 4                                              |
+    | Clock              | RX_CLK                    (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <STX_EP>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 4                                              |
+    | Clock              | RX_CLK                    (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <TX_EP>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | TX_CLK                    (rising_edge)        |
+    | Reset              | RST                       (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <INCOMING>.
+    Found 9-bit up counter for signal <ClkDiv>.
+    Found 1-bit xor8 for signal <Parity$xor0000> created at line 103.
+    Found 8-bit register for signal <RD_REG>.
+    Found 4-bit up counter for signal <RX_BIT_NB>.
+    Found 4-bit up counter for signal <RX_BIT_TIME>.
+    Found 10-bit register for signal <RX_BUF>.
+    Found 1-bit register for signal <RX_CLK>.
+    Found 4-bit up counter for signal <TX_BIT_NB>.
+    Found 4-bit up counter for signal <TX_BIT_TIME>.
+    Found 11-bit register for signal <TX_BUF>.
+    Summary:
+	inferred   3 Finite State Machine(s).
+	inferred   5 Counter(s).
+	inferred  31 D-type flip-flop(s).
+	inferred   1 Xor(s).
+Unit <UARTcomponent> synthesized.
+
+
+Synthesizing Unit <move_RS232>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/move_RS232.vhd".
+    Found 8-bit register for signal <data_TX>.
+    Found 8-bit register for signal <message_TX>.
+    Found 1-bit register for signal <ready_TX>.
+    Found 1-bit register for signal <rqt_TX>.
+    Found 1-bit register for signal <RS232_left>.
+    Found 1-bit register for signal <RS232_press>.
+    Found 1-bit register for signal <RS232_right>.
+    Found 1-bit register for signal <start_tempo_UART_RX>.
+    Found 1-bit register for signal <start_TX>.
+    Found 9-bit up counter for signal <tempo_UART_RX>.
+    Found 8-bit up counter for signal <tempo_UART_TX>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  23 D-type flip-flop(s).
+Unit <move_RS232> synthesized.
+
+
+Synthesizing Unit <decor>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/decor.vhd".
+WARNING:Xst:647 - Input <endframe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clk25> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <obstacle> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <ybarrier> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <xbarrier> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <direction> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <bluebox>.
+    Found 11-bit comparator greater for signal <wall_bottom$cmp_gt0000> created at line 102.
+    Found 11-bit comparator lessequal for signal <wall_brick$cmp_le0000> created at line 84.
+    Found 11-bit comparator less for signal <wall_brick$cmp_lt0000> created at line 76.
+    Found 11-bit comparator greater for signal <wall_right$cmp_gt0000> created at line 89.
+    Summary:
+	inferred   4 Comparator(s).
+Unit <decor> synthesized.
+
+
+Synthesizing Unit <pad>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/pad.vhd".
+    Found 9-bit adder for signal <$add0000> created at line 215.
+    Found 9-bit adder for signal <$add0001> created at line 224.
+    Found 10-bit adder for signal <$sub0000> created at line 129.
+    Found 9-bit adder for signal <$sub0001> created at line 155.
+    Found 10-bit comparator greater for signal <pad$cmp_gt0000> created at line 224.
+    Found 10-bit comparator lessequal for signal <pad$cmp_le0000> created at line 224.
+    Found 10-bit adder for signal <pad_center$add0000> created at line 189.
+    Found 10-bit adder for signal <pad_center$add0001> created at line 190.
+    Found 10-bit adder for signal <pad_center$add0002> created at line 194.
+    Found 10-bit comparator greater for signal <pad_center$cmp_gt0000> created at line 189.
+    Found 10-bit comparator greater for signal <pad_center$cmp_gt0001> created at line 190.
+    Found 10-bit comparator greater for signal <pad_center$cmp_gt0002> created at line 194.
+    Found 10-bit comparator lessequal for signal <pad_center$cmp_le0000> created at line 189.
+    Found 10-bit comparator lessequal for signal <pad_center$cmp_le0001> created at line 190.
+    Found 10-bit comparator lessequal for signal <pad_center$cmp_le0002> created at line 194.
+    Found 10-bit adder for signal <pad_far_right$add0000> created at line 198.
+    Found 10-bit adder for signal <pad_far_right$add0001> created at line 202.
+    Found 10-bit comparator greater for signal <pad_far_right$cmp_gt0000> created at line 198.
+    Found 10-bit comparator greater for signal <pad_far_right$cmp_gt0001> created at line 202.
+    Found 10-bit comparator lessequal for signal <pad_far_right$cmp_le0000> created at line 198.
+    Found 10-bit comparator less for signal <pad_far_right$cmp_lt0000> created at line 202.
+    Found 10-bit comparator greater for signal <pong_left$cmp_gt0000> created at line 215.
+    Found 10-bit comparator lessequal for signal <pong_left$cmp_le0000> created at line 215.
+    Found 10-bit updown accumulator for signal <xpad>.
+    Found 11-bit comparator greatequal for signal <xpad$cmp_ge0000> created at line 129.
+    Found 11-bit comparator lessequal for signal <xpad$cmp_le0000> created at line 122.
+    Found 11-bit comparator greater for signal <xpong_left$cmp_gt0000> created at line 90.
+    Found 11-bit comparator less for signal <xpong_left$cmp_lt0000> created at line 90.
+    Found 11-bit comparator greater for signal <xpong_right$cmp_gt0000> created at line 95.
+    Found 11-bit comparator less for signal <xpong_right$cmp_lt0000> created at line 95.
+    Found 11-bit comparator greater for signal <ypad$cmp_gt0000> created at line 85.
+    Found 11-bit comparator less for signal <ypad$cmp_lt0000> created at line 85.
+    Found 9-bit register for signal <ypong_left>.
+    Found 10-bit comparator greatequal for signal <ypong_left$cmp_ge0000> created at line 155.
+    Found 10-bit comparator lessequal for signal <ypong_left$cmp_le0000> created at line 139.
+    Found 10-bit comparator less for signal <ypong_left$cmp_lt0000> created at line 155.
+    Found 9-bit addsub for signal <ypong_left$mux0000>.
+    Found 9-bit register for signal <ypong_right>.
+    Found 10-bit comparator greatequal for signal <ypong_right$cmp_ge0000> created at line 163.
+    Found 10-bit comparator lessequal for signal <ypong_right$cmp_le0000> created at line 147.
+    Found 10-bit comparator less for signal <ypong_right$cmp_lt0000> created at line 163.
+    Found 9-bit addsub for signal <ypong_right$mux0000>.
+    Summary:
+	inferred   1 Accumulator(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred  28 Comparator(s).
+Unit <pad> synthesized.
+
+
+Synthesizing Unit <bounce>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/bounce.vhd".
+    Found 1-bit register for signal <ybounce>.
+    Found 1-bit register for signal <barrier_bounce>.
+    Found 1-bit register for signal <pad_center_bounce>.
+    Found 1-bit register for signal <rightbounce>.
+    Found 1-bit register for signal <pong_right_bounce>.
+    Found 1-bit register for signal <pad_right_bounce>.
+    Found 1-bit register for signal <pong_left_bounce>.
+    Found 1-bit register for signal <leftbounce>.
+    Found 1-bit register for signal <pad_far_left_bounce>.
+    Found 1-bit register for signal <pad_left_bounce>.
+    Found 1-bit register for signal <pad_far_right_bounce>.
+    Summary:
+	inferred  29 D-type flip-flop(s).
+Unit <bounce> synthesized.
+
+
+Synthesizing Unit <ball>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/ball.vhd".
+    Found finite state machine <FSM_4> for signal <inc_type>.
+    -----------------------------------------------------------------------
+    | States             | 12                                             |
+    | Transitions        | 144                                            |
+    | Inputs             | 11                                             |
+    | Outputs            | 24                                             |
+    | Clock              | clk25                     (rising_edge)        |
+    | Clock enable       | inc_type$not0000          (positive)           |
+    | Reset              | reset                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0100                                           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 10-bit adder for signal <ball$addsub0000> created at line 631.
+    Found 10-bit adder for signal <ball$addsub0001> created at line 631.
+    Found 10-bit comparator greatequal for signal <ball$cmp_ge0000> created at line 631.
+    Found 10-bit comparator greatequal for signal <ball$cmp_ge0001> created at line 631.
+    Found 10-bit comparator lessequal for signal <ball$cmp_le0000> created at line 631.
+    Found 10-bit comparator lessequal for signal <ball$cmp_le0001> created at line 631.
+    Found 1-bit register for signal <barrier_bounce_ok>.
+    Found 1-bit register for signal <lock>.
+    Found 2-bit register for signal <pong_bounce>.
+    Found 3-bit register for signal <tempo>.
+    Found 3-bit adder for signal <tempo$addsub0000> created at line 125.
+    Found 1-bit register for signal <tempo_start>.
+    Found 10-bit register for signal <xball>.
+    Found 10-bit addsub for signal <xball$share0000> created at line 212.
+    Found 10-bit register for signal <yball>.
+    Found 10-bit addsub for signal <yball$share0000> created at line 212.
+    Found 5-bit register for signal <zone_pad_bounce>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  13 D-type flip-flop(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred   4 Comparator(s).
+Unit <ball> synthesized.
+
+
+Synthesizing Unit <brick_ctrl>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/brick.vhd".
+    Found 11-bit comparator greater for signal <$cmp_gt0000> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0001> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0002> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0003> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0004> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0005> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0006> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0007> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0008> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0009> created at line 38.
+    Found 11-bit comparator greater for signal <$cmp_gt0010> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0000> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0001> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0002> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0003> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0004> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0005> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0006> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0007> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0008> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0009> created at line 38.
+    Found 11-bit comparator less for signal <$cmp_lt0010> created at line 38.
+    Summary:
+	inferred  22 Comparator(s).
+Unit <brick_ctrl> synthesized.
+
+
+Synthesizing Unit <display>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/display.vhd".
+Unit <display> synthesized.
+
+
+Synthesizing Unit <game_mgr>.
+    Related source file is "//turing/homes/Documents/PMC_E201/game_mgr.vhd".
+    Found finite state machine <FSM_5> for signal <EP>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk25                     (rising_edge)        |
+    | Reset              | reset                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | e0                                             |
+    | Power Up State     | e0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <game_mgr> synthesized.
+
+
+Synthesizing Unit <master_slave_mgr>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/mas_sla_mgr.vhd".
+    Found finite state machine <FSM_6> for signal <EP>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 1                                              |
+    | Clock              | clk25                     (rising_edge)        |
+    | Reset              | reset                     (negative)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | master                                         |
+    | Power Up State     | master                                         |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <master_slave_mgr> synthesized.
+
+
+Synthesizing Unit <ip_rotary>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/ip_rotary.vhd".
+Unit <ip_rotary> synthesized.
+
+
+Synthesizing Unit <ip_uart>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/ip_uart.vhd".
+Unit <ip_uart> synthesized.
+
+
+Synthesizing Unit <objects>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/objects.vhd".
+Unit <objects> synthesized.
+
+
+Synthesizing Unit <game>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/game.vhd".
+WARNING:Xst:647 - Input <lost> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <endframe> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <no_brick> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <game> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "//turing/homes/Documents/PMC_E201/Sources_Debut_TP/top.vhd".
+WARNING:Xst:646 - Signal <pause_rqt> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <other_press> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+Unit <top> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 8
+ 10-bit addsub                                         : 2
+ 3-bit adder                                           : 1
+ 9-bit adder                                           : 3
+ 9-bit addsub                                          : 2
+# Counters                                             : 10
+ 10-bit up counter                                     : 2
+ 22-bit down counter                                   : 1
+ 4-bit up counter                                      : 4
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Accumulators                                         : 1
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 64
+ 1-bit register                                        : 52
+ 10-bit register                                       : 3
+ 11-bit register                                       : 1
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 5-bit register                                        : 1
+ 8-bit register                                        : 3
+ 9-bit register                                        : 2
+# Comparators                                          : 62
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator greater                             : 7
+ 10-bit comparator less                                : 3
+ 10-bit comparator lessequal                           : 10
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator greater                             : 17
+ 11-bit comparator less                                : 17
+ 11-bit comparator lessequal                           : 3
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_6> for best encoding.
+Optimizing FSM <game_ctrl/master_slave_select/EP/FSM> on signal <EP[1:2]> with gray encoding.
+-----------------------------
+ State           | Encoding
+-----------------------------
+ master          | 00
+ change_2_slave  | 01
+ slave           | 11
+ change_2_master | 10
+-----------------------------
+Analyzing FSM <FSM_5> for best encoding.
+Optimizing FSM <game_ctrl/game_mgr/EP/FSM> on signal <EP[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ e0    | 00
+ e1    | 01
+ e2    | 11
+ e3    | 10
+-------------------
+Analyzing FSM <FSM_4> for best encoding.
+Optimizing FSM <obj_ctrl/ball_ctrl/inc_type/FSM> on signal <inc_type[1:4]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0100
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0001
+ 0101  | 0101
+ 1010  | 1010
+ 1011  | 1000
+ 1100  | 0110
+ 1101  | 0111
+ 1110  | 1001
+ 1111  | 1011
+-------------------
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <RS232/RS232/TX_EP/FSM> on signal <TX_EP[1:2]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ idle      | 00
+ transfer  | 01
+ send_data | 10
+-----------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <RS232/RS232/STX_EP/FSM> on signal <STX_EP[1:2]> with gray encoding.
+------------------------
+ State      | Encoding
+------------------------
+ idle       | 00
+ set_stx    | 01
+ wait_load  | 11
+ wait_write | 10
+------------------------
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <RS232/RS232/RX_EP/FSM> on signal <RX_EP[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ idle     | 00
+ delay    | 01
+ get_data | 11
+ stop     | 10
+----------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <codeur/move/EP/FSM> on signal <EP[1:3]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ e0    | 000
+ e1    | 001
+ e2    | 010
+ e3    | 110
+ e4    | 011
+ e5    | 111
+ e6    | 101
+-------------------
+WARNING:Xst:1710 - FF/Latch <TX_BUF_10> (without init value) has a constant value of 1 in block <RS232>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 7
+# Adders/Subtractors                                   : 16
+ 10-bit adder                                          : 8
+ 10-bit addsub                                         : 2
+ 3-bit adder                                           : 1
+ 9-bit adder                                           : 3
+ 9-bit addsub                                          : 2
+# Counters                                             : 10
+ 10-bit up counter                                     : 2
+ 22-bit down counter                                   : 1
+ 4-bit up counter                                      : 4
+ 8-bit up counter                                      : 1
+ 9-bit up counter                                      : 2
+# Accumulators                                         : 1
+ 10-bit updown accumulator                             : 1
+# Registers                                            : 145
+ Flip-Flops                                            : 145
+# Comparators                                          : 62
+ 10-bit comparator greatequal                          : 4
+ 10-bit comparator greater                             : 7
+ 10-bit comparator less                                : 3
+ 10-bit comparator lessequal                           : 10
+ 11-bit comparator greatequal                          : 1
+ 11-bit comparator greater                             : 17
+ 11-bit comparator less                                : 17
+ 11-bit comparator lessequal                           : 3
+# Multiplexers                                         : 2
+ 1-bit 4-to-1 multiplexer                              : 2
+# Xors                                                 : 2
+ 1-bit xor2                                            : 1
+ 1-bit xor8                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <TX_BUF_10> (without init value) has a constant value of 1 in block <UARTcomponent>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <message_TX_4> in Unit <move_RS232> is equivalent to the following 2 FFs/Latches, which will be removed : <message_TX_5> <message_TX_6> 
+INFO:Xst:2261 - The FF/Latch <message_TX_1> in Unit <move_RS232> is equivalent to the following 2 FFs/Latches, which will be removed : <message_TX_2> <message_TX_3> 
+INFO:Xst:2261 - The FF/Latch <data_TX_1> in Unit <move_RS232> is equivalent to the following 2 FFs/Latches, which will be removed : <data_TX_2> <data_TX_3> 
+INFO:Xst:2261 - The FF/Latch <data_TX_4> in Unit <move_RS232> is equivalent to the following 2 FFs/Latches, which will be removed : <data_TX_5> <data_TX_6> 
+
+Optimizing unit <top> ...
+
+Optimizing unit <button_mgr> ...
+
+Optimizing unit <VGA> ...
+
+Optimizing unit <rotary> ...
+
+Optimizing unit <UARTcomponent> ...
+
+Optimizing unit <move_RS232> ...
+
+Optimizing unit <bounce> ...
+
+Optimizing unit <brick_ctrl> ...
+
+Optimizing unit <pad> ...
+
+Optimizing unit <ball> ...
+WARNING:Xst:2677 - Node <RS232/direction/RS232_press> of sequential type is unconnected in block <top>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 11.
+FlipFlop game_ctrl/game_mgr/EP_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop obj_ctrl/ball_ctrl/pong_bounce_1 has been replicated 1 time(s)
+FlipFlop obj_ctrl/bounce_ctrl/leftbounce has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 249
+ Flip-Flops                                            : 249
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 27
+
+Cell Usage :
+# BELS                             : 1540
+#      GND                         : 1
+#      INV                         : 62
+#      LUT1                        : 84
+#      LUT2                        : 219
+#      LUT2_D                      : 7
+#      LUT2_L                      : 7
+#      LUT3                        : 172
+#      LUT3_D                      : 9
+#      LUT3_L                      : 13
+#      LUT4                        : 328
+#      LUT4_D                      : 28
+#      LUT4_L                      : 42
+#      MUXCY                       : 354
+#      MUXF5                       : 20
+#      VCC                         : 1
+#      XORCY                       : 193
+# FlipFlops/Latches                : 249
+#      FDC                         : 51
+#      FDCE                        : 138
+#      FDP                         : 2
+#      FDPE                        : 58
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 12
+#      OBUF                        : 14
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      509  out of   4656    10%  
+ Number of Slice Flip Flops:            249  out of   9312     2%  
+ Number of 4 input LUTs:                971  out of   9312    10%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    232    11%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)        | Load  |
+-----------------------------------+------------------------------+-------+
+clk50                              | BUFGP                        | 1     |
+clkgen/d1                          | BUFG                         | 198   |
+RS232/RS232/RX_CLK1                | BUFG                         | 34    |
+RS232/RS232/TX_BIT_TIME_3          | NONE(RS232/RS232/TX_BIT_NB_3)| 16    |
+-----------------------------------+------------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+----------------------------------------+---------------------------+-------+
+Control Signal                          | Buffer(FF name)           | Load  |
+----------------------------------------+---------------------------+-------+
+RS232/RS232/RST_inv(clkgen/Reset_inv1:O)| NONE(RS232/RS232/ClkDiv_0)| 249   |
+----------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 9.762ns (Maximum Frequency: 102.435MHz)
+   Minimum input arrival time before clock: 10.763ns
+   Maximum output required time after clock: 13.940ns
+   Maximum combinational path delay: 16.388ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk50'
+  Clock period: 2.131ns (frequency: 469.274MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.131ns (Levels of Logic = 1)
+  Source:            clkgen/d (FF)
+  Destination:       clkgen/d (FF)
+  Source Clock:      clk50 rising
+  Destination Clock: clk50 rising
+
+  Data Path: clkgen/d to clkgen/d
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.514   0.380  clkgen/d (clkgen/d1)
+     INV:I->O              1   0.612   0.357  clkgen/d_not00011_INV_0 (clkgen/d_not0001)
+     FDC:D                     0.268          clkgen/d
+    ----------------------------------------
+    Total                      2.131ns (1.394ns logic, 0.737ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clkgen/d1'
+  Clock period: 9.762ns (frequency: 102.435MHz)
+  Total number of paths / destination ports: 30128 / 340
+-------------------------------------------------------------------------
+Delay:               9.762ns (Levels of Logic = 15)
+  Source:            obj_ctrl/ball_ctrl/zone_pad_bounce_1 (FF)
+  Destination:       obj_ctrl/ball_ctrl/xball_9 (FF)
+  Source Clock:      clkgen/d1 rising
+  Destination Clock: clkgen/d1 rising
+
+  Data Path: obj_ctrl/ball_ctrl/zone_pad_bounce_1 to obj_ctrl/ball_ctrl/xball_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            11   0.514   0.945  obj_ctrl/ball_ctrl/zone_pad_bounce_1 (obj_ctrl/ball_ctrl/zone_pad_bounce_1)
+     LUT3_D:I0->O         17   0.612   0.896  obj_ctrl/ball_ctrl/xball_mux0003211 (obj_ctrl/ball_ctrl/N22)
+     LUT4_D:I3->O         17   0.612   0.896  obj_ctrl/ball_ctrl/yball_and00021 (obj_ctrl/ball_ctrl/yball_and0002)
+     LUT4:I3->O            1   0.612   0.360  obj_ctrl/ball_ctrl/xball_mux0002<8>75 (obj_ctrl/ball_ctrl/xball_mux0002<8>75)
+     LUT4:I3->O            1   0.612   0.360  obj_ctrl/ball_ctrl/xball_mux0002<8>193_SW0 (N100)
+     LUT4:I3->O            1   0.612   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_lut<1> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<1> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<2> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<3> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<4> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<5> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<6> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<7> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<7>)
+     MUXCY:CI->O           0   0.052   0.000  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<8> (obj_ctrl/ball_ctrl/Maddsub_xball_share0000_cy<8>)
+     XORCY:CI->O           1   0.699   0.387  obj_ctrl/ball_ctrl/Maddsub_xball_share0000_xor<9> (obj_ctrl/ball_ctrl/xball_share0000<9>)
+     LUT3:I2->O            1   0.612   0.000  obj_ctrl/ball_ctrl/xball_mux0001<0>1 (obj_ctrl/ball_ctrl/xball_mux0001<0>)
+     FDCE:D                    0.268          obj_ctrl/ball_ctrl/xball_9
+    ----------------------------------------
+    Total                      9.762ns (5.917ns logic, 3.845ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RS232/RS232/RX_CLK1'
+  Clock period: 4.124ns (frequency: 242.507MHz)
+  Total number of paths / destination ports: 204 / 55
+-------------------------------------------------------------------------
+Delay:               4.124ns (Levels of Logic = 2)
+  Source:            RS232/RS232/RX_BIT_TIME_2 (FF)
+  Destination:       RS232/RS232/RX_BUF_9 (FF)
+  Source Clock:      RS232/RS232/RX_CLK1 rising
+  Destination Clock: RS232/RS232/RX_CLK1 rising
+
+  Data Path: RS232/RS232/RX_BIT_TIME_2 to RS232/RS232/RX_BUF_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.514   0.651  RS232/RS232/RX_BIT_TIME_2 (RS232/RS232/RX_BIT_TIME_2)
+     LUT3:I0->O            4   0.612   0.502  RS232/RS232/Mcount_RX_BIT_TIME_eqn_321 (RS232/RS232/N2)
+     LUT4:I3->O           10   0.612   0.750  RS232/RS232/RX_BIT_NB_INC1 (RS232/RS232/RX_BIT_NB_INC)
+     FDPE:CE                   0.483          RS232/RS232/RX_BUF_0
+    ----------------------------------------
+    Total                      4.124ns (2.221ns logic, 1.903ns route)
+                                       (53.9% logic, 46.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RS232/RS232/TX_BIT_TIME_3'
+  Clock period: 3.263ns (frequency: 306.443MHz)
+  Total number of paths / destination ports: 61 / 26
+-------------------------------------------------------------------------
+Delay:               3.263ns (Levels of Logic = 1)
+  Source:            RS232/RS232/TX_EP_FSM_FFd1 (FF)
+  Destination:       RS232/RS232/TX_BUF_9 (FF)
+  Source Clock:      RS232/RS232/TX_BIT_TIME_3 rising
+  Destination Clock: RS232/RS232/TX_BIT_TIME_3 rising
+
+  Data Path: RS232/RS232/TX_EP_FSM_FFd1 to RS232/RS232/TX_BUF_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             13   0.514   0.905  RS232/RS232/TX_EP_FSM_FFd1 (RS232/RS232/TX_EP_FSM_FFd1)
+     LUT2:I1->O           10   0.612   0.750  RS232/RS232/TX_BUF_not00011 (RS232/RS232/TX_BUF_not0001)
+     FDPE:CE                   0.483          RS232/RS232/TX_BUF_0
+    ----------------------------------------
+    Total                      3.263ns (1.609ns logic, 1.654ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkgen/d1'
+  Total number of paths / destination ports: 1843 / 125
+-------------------------------------------------------------------------
+Offset:              10.763ns (Levels of Logic = 17)
+  Source:            S3 (PAD)
+  Destination:       obj_ctrl/bounce_ctrl/pad_center_bounce (FF)
+  Destination Clock: clkgen/d1 rising
+
+  Data Path: S3 to obj_ctrl/bounce_ctrl/pad_center_bounce
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.106   1.072  S3_IBUF (S3_IBUF)
+     INV:I->O             11   0.612   0.862  obj_ctrl/pad_ctrl/Madd__sub0001_cy<6>1_INV_0 (obj_ctrl/pad_ctrl/Madd__sub0001_cy<6>)
+     LUT2:I1->O            1   0.612   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_lut<0> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<0> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<1> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<2> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<3> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<4> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<5> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<6> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<7> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<7>)
+     MUXCY:CI->O           0   0.051   0.000  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<8> (obj_ctrl/pad_ctrl/Madd_pad_center_add0000_cy<8>)
+     XORCY:CI->O           1   0.699   0.509  obj_ctrl/pad_ctrl/Madd_pad_center_add0000_xor<9> (obj_ctrl/pad_ctrl/pad_center_add0000<9>)
+     LUT2:I0->O            1   0.612   0.000  obj_ctrl/pad_ctrl/Mcompar_pad_center_cmp_le0000_lut<9> (obj_ctrl/pad_ctrl/Mcompar_pad_center_cmp_le0000_lut<9>)
+     MUXCY:S->O            6   0.752   0.638  obj_ctrl/pad_ctrl/Mcompar_pad_center_cmp_le0000_cy<9> (obj_ctrl/pad_ctrl/pad_center_cmp_le0000)
+     LUT2_D:I1->O          2   0.612   0.410  obj_ctrl/pad_ctrl/pad_far_right11 (obj_ctrl/pad_ctrl/N5)
+     LUT4:I2->O            1   0.612   0.357  obj_ctrl/bounce_ctrl/pad_center_bounce_not0001 (obj_ctrl/bounce_ctrl/pad_center_bounce_not0001)
+     FDCE:CE                   0.483          obj_ctrl/bounce_ctrl/pad_center_bounce
+    ----------------------------------------
+    Total                     10.763ns (6.916ns logic, 3.847ns route)
+                                       (64.3% logic, 35.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'RS232/RS232/RX_CLK1'
+  Total number of paths / destination ports: 7 / 6
+-------------------------------------------------------------------------
+Offset:              3.891ns (Levels of Logic = 3)
+  Source:            rxd (PAD)
+  Destination:       RS232/RS232/RX_BIT_TIME_2 (FF)
+  Destination Clock: RS232/RS232/RX_CLK1 rising
+
+  Data Path: rxd to RS232/RS232/RX_BIT_TIME_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             5   1.106   0.690  rxd_IBUF (rxd_IBUF)
+     LUT3:I0->O            3   0.612   0.603  RS232/RS232/Mcount_RX_BIT_TIME_eqn_311 (RS232/RS232/N11)
+     LUT3:I0->O            1   0.612   0.000  RS232/RS232/Mcount_RX_BIT_TIME_eqn_11 (RS232/RS232/Mcount_RX_BIT_TIME_eqn_1)
+     FDC:D                     0.268          RS232/RS232/RX_BIT_TIME_1
+    ----------------------------------------
+    Total                      3.891ns (2.598ns logic, 1.293ns route)
+                                       (66.8% logic, 33.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkgen/d1'
+  Total number of paths / destination ports: 7461 / 13
+-------------------------------------------------------------------------
+Offset:              13.940ns (Levels of Logic = 17)
+  Source:            obj_ctrl/pad_ctrl/ypong_right_2 (FF)
+  Destination:       VGA_blue (PAD)
+  Source Clock:      clkgen/d1 rising
+
+  Data Path: obj_ctrl/pad_ctrl/ypong_right_2 to VGA_blue
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             5   0.514   0.690  obj_ctrl/pad_ctrl/ypong_right_2 (obj_ctrl/pad_ctrl/ypong_right_2)
+     LUT2:I0->O            1   0.612   0.000  obj_ctrl/pad_ctrl/Madd__add0001_lut<2> (obj_ctrl/pad_ctrl/Madd__add0001_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<2> (obj_ctrl/pad_ctrl/Madd__add0001_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<3> (obj_ctrl/pad_ctrl/Madd__add0001_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<4> (obj_ctrl/pad_ctrl/Madd__add0001_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<5> (obj_ctrl/pad_ctrl/Madd__add0001_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<6> (obj_ctrl/pad_ctrl/Madd__add0001_cy<6>)
+     MUXCY:CI->O           0   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<7> (obj_ctrl/pad_ctrl/Madd__add0001_cy<7>)
+     XORCY:CI->O           1   0.699   0.509  obj_ctrl/pad_ctrl/Madd__add0001_xor<8> (obj_ctrl/pad_ctrl/_add0001<8>)
+     LUT2:I0->O            1   0.612   0.000  obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_lut<8> (obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_lut<8>)
+     MUXCY:S->O            1   0.404   0.000  obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_cy<8> (obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_cy<8>)
+     MUXCY:CI->O           1   0.399   0.426  obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_cy<9> (obj_ctrl/pad_ctrl/pad_cmp_le0000)
+     LUT3_D:I1->O          1   0.612   0.509  obj_ctrl/pad_ctrl/pong_right57 (obj_ctrl/pong_right)
+     LUT4:I0->O            1   0.612   0.360  obj_ctrl/pad_ctrl/pad0 (obj_ctrl/pad_ctrl/pad0)
+     LUT4:I3->O            2   0.612   0.449  obj_ctrl/pad_ctrl/pad62 (pad)
+     LUT4:I1->O            1   0.612   0.509  game_ctrl/color_select/blue_SW0 (N55)
+     LUT4:I0->O            1   0.612   0.357  game_ctrl/color_select/blue (blue)
+     OBUF:I->O                 3.169          VGA_blue_OBUF (VGA_blue)
+    ----------------------------------------
+    Total                     13.940ns (10.131ns logic, 3.809ns route)
+                                       (72.7% logic, 27.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'RS232/RS232/TX_BIT_TIME_3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            RS232/RS232/TX_BUF_0 (FF)
+  Destination:       txd (PAD)
+  Source Clock:      RS232/RS232/TX_BIT_TIME_3 rising
+
+  Data Path: RS232/RS232/TX_BUF_0 to txd
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q             1   0.514   0.357  RS232/RS232/TX_BUF_0 (RS232/RS232/TX_BUF_0)
+     OBUF:I->O                 3.169          txd_OBUF (txd)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1514 / 11
+-------------------------------------------------------------------------
+Delay:               16.388ns (Levels of Logic = 19)
+  Source:            S3 (PAD)
+  Destination:       VGA_blue (PAD)
+
+  Data Path: S3 to VGA_blue
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   1.106   1.072  S3_IBUF (S3_IBUF)
+     INV:I->O             11   0.612   0.862  obj_ctrl/pad_ctrl/Madd__sub0001_cy<6>1_INV_0 (obj_ctrl/pad_ctrl/Madd__sub0001_cy<6>)
+     LUT2:I1->O            1   0.612   0.000  obj_ctrl/pad_ctrl/Madd__add0001_lut<2> (obj_ctrl/pad_ctrl/Madd__add0001_lut<2>)
+     MUXCY:S->O            1   0.404   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<2> (obj_ctrl/pad_ctrl/Madd__add0001_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<3> (obj_ctrl/pad_ctrl/Madd__add0001_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<4> (obj_ctrl/pad_ctrl/Madd__add0001_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<5> (obj_ctrl/pad_ctrl/Madd__add0001_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<6> (obj_ctrl/pad_ctrl/Madd__add0001_cy<6>)
+     MUXCY:CI->O           0   0.052   0.000  obj_ctrl/pad_ctrl/Madd__add0001_cy<7> (obj_ctrl/pad_ctrl/Madd__add0001_cy<7>)
+     XORCY:CI->O           1   0.699   0.509  obj_ctrl/pad_ctrl/Madd__add0001_xor<8> (obj_ctrl/pad_ctrl/_add0001<8>)
+     LUT2:I0->O            1   0.612   0.000  obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_lut<8> (obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_lut<8>)
+     MUXCY:S->O            1   0.404   0.000  obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_cy<8> (obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_cy<8>)
+     MUXCY:CI->O           1   0.399   0.426  obj_ctrl/pad_ctrl/Mcompar_pad_cmp_le0000_cy<9> (obj_ctrl/pad_ctrl/pad_cmp_le0000)
+     LUT3_D:I1->O          1   0.612   0.509  obj_ctrl/pad_ctrl/pong_right57 (obj_ctrl/pong_right)
+     LUT4:I0->O            1   0.612   0.360  obj_ctrl/pad_ctrl/pad0 (obj_ctrl/pad_ctrl/pad0)
+     LUT4:I3->O            2   0.612   0.449  obj_ctrl/pad_ctrl/pad62 (pad)
+     LUT4:I1->O            1   0.612   0.509  game_ctrl/color_select/blue_SW0 (N55)
+     LUT4:I0->O            1   0.612   0.357  game_ctrl/color_select/blue (blue)
+     OBUF:I->O                 3.169          VGA_blue_OBUF (VGA_blue)
+    ----------------------------------------
+    Total                     16.388ns (11.335ns logic, 5.053ns route)
+                                       (69.2% logic, 30.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 15.00 secs
+Total CPU time to Xst completion: 15.00 secs
+ 
+--> 
+
+Total memory usage is 302368 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+
